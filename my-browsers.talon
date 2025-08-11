@@ -34,3 +34,22 @@ scout:
 # for night reader extension
 dark theme:
     key(alt-shift-d)
+
+
+# music
+go ambience oblivion:
+    app.tab_open()
+    browser.go("https://www.youtube.com/watch?v=xFjpTF4-PgI&t=350s")
+
+go ambience oblivion too:
+    app.tab_open()
+    browser.go("https://www.youtube.com/watch?v=vXj71r-WrQk&t=1199s")
+
+
+go ambience lord of the rings:
+    app.tab_open()
+    browser.go("https://www.youtube.com/watch?v=d9YM_9CVmtc&t=1701s")
+
+go ambience lord of the rings too:
+    app.tab_open()
+    browser.go("https://www.youtube.com/watch?v=5jceNNZD4oY")
