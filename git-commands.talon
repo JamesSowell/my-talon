@@ -14,14 +14,7 @@ git onstage changes:
 git stage changes:
     insert("git add .")
 
-# Branching Methods
-git merge theirs:
-    insert("git merge   -X theirs")
-    key(left:10)
 
-git merge ours:
-    insert("git merge   -X ours")
-    key(left:8)
 
 git previous branch:
     insert("git switch -")
@@ -48,6 +41,9 @@ git copy branch name:
 
 git copy branch hash:
     insert("git rev-parse --short HEAD")
+
+git cherry-pick:
+    insert("git cherry-pick ")
 
 git create branch from remote:
     insert("git switch --track origin/")
