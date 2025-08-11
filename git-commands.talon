@@ -2,6 +2,7 @@ tag: terminal
 -
 
 
+
 git discard changes:
     insert("git checkout -- .")
 
@@ -47,3 +48,9 @@ git cherry-pick:
 
 git create branch from remote:
     insert("git switch --track origin/")
+
+
+# not necessary but fun
+git logo:
+    insert("git log --oneline -n 25")
+    key(enter)
