@@ -29,3 +29,7 @@ rest: insert(". ")
 
 idea: 
     key(shift-enter)
+
+# piping is very common
+puppet:
+    insert(" | ")
