@@ -39,9 +39,12 @@ git pull this branch:
 
 git copy branch name:
     insert("git rev-parse --abbrev-ref HEAD | scb")
+    key(enter)
 
 git copy branch hash:
-    insert("git rev-parse --short HEAD")
+    insert("git rev-parse --short HEAD | scb")
+    key(enter)
+
 
 git cherry-pick:
     insert("git cherry-pick ")
