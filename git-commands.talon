@@ -25,17 +25,23 @@ git next branch:
     insert("gnb")
     key(enter)
 
+
+# figure out how to make this windows only
 git push this branch:
     insert("git rev-parse --abbrev-ref HEAD | scb")
     key(enter)
+    sleep(200ms)
     insert("git push origin ")
     edit.paste()
+    key(enter)
 
 git pull this branch:
     insert("git rev-parse --abbrev-ref HEAD | scb")
     key(enter)
+    sleep(200ms)
     insert("git push origin ")
     edit.paste()
+    key(enter)
 
 git copy branch name:
     insert("git rev-parse --abbrev-ref HEAD | scb")
