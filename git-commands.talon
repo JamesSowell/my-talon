@@ -51,6 +51,21 @@ git copy branch hash:
     insert("git rev-parse --short HEAD | scb")
     key(enter)
 
+git checkout main:
+    insert("git checkout main")
+    key(enter)
+
+git checkout develop:
+    insert("git checkout develop")
+    key(enter)
+
+git checkout development:
+    insert("git checkout development")
+    key(enter)
+
+git checkout trunk:
+    insert("git checkout trunk")
+    key(enter)
 
 git cherry-pick:
     insert("git cherry-pick ")
