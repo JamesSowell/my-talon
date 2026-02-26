@@ -33,13 +33,13 @@ git push this branch:
     sleep(200ms)
     insert("git push origin ")
     edit.paste()
-    key(enter)
+    key(enter)  
 
 git pull this branch:
     insert("git rev-parse --abbrev-ref HEAD | scb")
     key(enter)
     sleep(200ms)
-    insert("git push origin ")
+    insert("git pull origin ")
     edit.paste()
     key(enter)
 
