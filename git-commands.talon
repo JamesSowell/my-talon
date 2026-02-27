@@ -57,11 +57,11 @@ git next branch:
     key(enter)
 
 git switch list:
-    insert("gswt")
+    insert("gst")
     key(enter)
 
 git switch <number>:
-    insert("gswt {number}")
+    insert("gst {number}")
     key(enter)
 
 git push this branch: user.git_push_this_branch()
