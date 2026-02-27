@@ -11,9 +11,11 @@ git discard untracked:
 
 git onstage changes:
     insert("git reset")
+    key(enter)
 
 git stage changes:
     insert("git add .")
+    key(enter)
 
 
 
@@ -26,7 +28,15 @@ git next branch:
     key(enter)
 
 
-# figure out how to make this windows only
+git copy branch name:
+    insert("git rev-parse --abbrev-ref HEAD | scb")
+    key(enter)
+
+git copy branch hash:
+    insert("git rev-parse --short HEAD | scb")
+    key(enter)
+
+# figure out how to not just make this windows onlyyz
 git push this branch:
     insert("git rev-parse --abbrev-ref HEAD | scb")
     key(enter)
@@ -41,14 +51,6 @@ git pull this branch:
     sleep(200ms)
     insert("git pull origin ")
     edit.paste()
-    key(enter)
-
-git copy branch name:
-    insert("git rev-parse --abbrev-ref HEAD | scb")
-    key(enter)
-
-git copy branch hash:
-    insert("git rev-parse --short HEAD | scb")
     key(enter)
 
 git checkout main:
@@ -78,3 +80,10 @@ git create branch from remote:
 git logo:
     insert("git log --oneline -n 25")
     key(enter)
+
+
+
+git push this branch: user.git_push_this_branch()
+git pull this branch: user.git_pull_this_branch()
+git copy branch name: user.git_copy_branch_name()
+git copy branch hash: user.git_copy_branch_hash()
