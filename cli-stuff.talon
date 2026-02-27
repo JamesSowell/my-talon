@@ -51,3 +51,23 @@ NVM install:
 
 NVM uninstall:
     insert("nvm uninstall")
+
+# yarn commands 
+yarn install:    
+    insert("yarn install")
+    key(enter)
+
+yarn start:
+    insert("yarn start")
+    key(enter)
+
+yarn build:
+    insert("yarn build")
+    key(enter)
+
+yarn lint:
+    insert("yarn lint")
+    key(enter)
+
+yarn test:
+    insert("yarn test")
