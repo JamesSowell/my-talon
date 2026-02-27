@@ -27,32 +27,6 @@ git next branch:
     insert("gnb")
     key(enter)
 
-
-git copy branch name:
-    insert("git rev-parse --abbrev-ref HEAD | scb")
-    key(enter)
-
-git copy branch hash:
-    insert("git rev-parse --short HEAD | scb")
-    key(enter)
-
-# figure out how to not just make this windows onlyyz
-git push this branch:
-    insert("git rev-parse --abbrev-ref HEAD | scb")
-    key(enter)
-    sleep(200ms)
-    insert("git push origin ")
-    edit.paste()
-    key(enter)  
-
-git pull this branch:
-    insert("git rev-parse --abbrev-ref HEAD | scb")
-    key(enter)
-    sleep(200ms)
-    insert("git pull origin ")
-    edit.paste()
-    key(enter)
-
 git checkout main:
     insert("git checkout main")
     key(enter)
