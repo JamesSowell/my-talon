@@ -23,10 +23,6 @@ git previous branch:
     insert("git switch -")
     key(enter)
 
-git next branch:
-    insert("gnb")
-    key(enter)
-
 git checkout main:
     insert("git checkout main")
     key(enter)
@@ -55,7 +51,18 @@ git logo:
     insert("git log --oneline -n 25")
     key(enter)
 
+# custom shell script based commands
+git next branch:
+    insert("gnb")
+    key(enter)
 
+git switch list:
+    insert("gswt")
+    key(enter)
+
+git switch <number>:
+    insert("gswt {number}")
+    key(enter)
 
 git push this branch: user.git_push_this_branch()
 git pull this branch: user.git_pull_this_branch()
